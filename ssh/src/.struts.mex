@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="default" location="176,165" size="225,805">
+    <action name="studentAction" location="10,270" size="150,272">
+      <result name="addStudent">
+        <resourceEdge source="addStudent" routing="0" target="success.jsp" />
+      </result>
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="addStudent.jsp" />
+      </result>
+      <result name="listStudent">
+        <resourceEdge source="listStudent" routing="0" target="studentList.jsp" />
+      </result>
+      <result name="getStudentById">
+        <resourceEdge source="getStudentById" routing="0" target="updateStudent.jsp" />
+      </result>
+      <result name="getScore">
+        <resourceEdge source="getScore" routing="0" target="scoreInfo.jsp" />
+      </result>
+      <result name="editStudent">
+        <resourceEdge source="editStudent" routing="0" target="editStudent.jsp" />
+      </result>
+      <result name="updateStudent">
+        <resourceEdge source="updateStudent" routing="0" target="success.jsp" />
+      </result>
+      <result name="deleteStudent">
+        <resourceEdge source="deleteStudent" routing="0" target="success.jsp" />
+      </result>
+      <result name="getStudentPwd">
+        <resourceEdge source="getStudentPwd" routing="0" target="updateStudentPwd.jsp" />
+      </result>
+      <result name="updatePwd">
+        <resourceEdge source="updatePwd" routing="0" target="logout.jsp" />
+      </result>
+      <result name="updateStudentPwd" />
+      <result name="error" />
+    </action>
+    <action name="teacherAction" location="38,17" size="150,251">
+      <result name="addTeacher" />
+      <result name="deleteTeacher" />
+      <result name="listTeacher" />
+      <result name="updateTeacher" />
+      <result name="getTeacherById" />
+      <result name="fail" />
+      <result name="loadScores" />
+      <result name="editScore" />
+      <result name="updateScore" />
+      <result name="addScore" />
+      <result name="updatePwd" />
+      <result name="updateTeacherPwd" />
+      <result name="error" />
+    </action>
+    <action name="adminAction" location="10,570" size="150,62">
+      <result name="success" />
+      <result name="error" />
+    </action>
+    <action name="loginAction" location="10,670" size="150,125">
+      <result name="student" />
+      <result name="teacher" />
+      <result name="admin" />
+      <result name="input" />
+      <result name="error" />
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="474,422" size="150,55" />
+  <webResource name="scoresInfo.jsp" path="/scoresInfo.jsp" location="10,325" size="150,55" />
+  <webResource name="editScore.jsp" path="/editScore.jsp" location="258,10" size="150,55" />
+  <webResource name="error.jsp" path="/error.jsp" location="511,220" size="150,55" />
+  <webResource name="login.jsp" path="/login.jsp" location="500,350" size="150,55" />
+  <webResource name="success.jsp" path="/success.jsp" location="50,500" size="150,55" />
+  <webResource name="index.jsp" path="/teacher/index.jsp" location="500,500" size="150,55" />
+  <webResource name="scoresInfo.jsp" path="/teacher/scoresInfo.jsp" location="50,650" size="150,55" />
+  <webResource name="editScore.jsp" path="/teacher/editScore.jsp" location="350,650" size="150,55" />
+  <webResource name="success.jsp" path="/teacher/success.jsp" location="50,800" size="150,55" />
+  <webResource name="addStudent.jsp" path="/behind/addStudent.jsp" location="0,0" size="0,0" />
+  <webResource name="studentList.jsp" path="/behind/studentList.jsp" location="0,0" size="0,0" />
+  <webResource name="updateStudent.jsp" path="/student/updateStudent.jsp" location="0,0" size="0,0" />
+  <webResource name="scoreInfo.jsp" path="/student/scoreInfo.jsp" location="0,0" size="0,0" />
+  <webResource name="editStudent.jsp" path="/behind/editStudent.jsp" location="0,0" size="0,0" />
+  <webResource name="updateStudentPwd.jsp" path="/student/updateStudentPwd.jsp" location="0,0" size="0,0" />
+  <webResource name="logout.jsp" path="/logout.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

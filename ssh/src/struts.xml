@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="studentAction" class="com.ssh.action.StudentAction">
+			<result name="addStudent">/success.jsp</result>
+			<result name="fail">/behind/addStudent.jsp</result>
+			<result name="update">/success.jsp</result>
+			<result name="listStudent">/behind/studentList.jsp</result>
+			<result name="getStudentById">/student/updateStudent.jsp</result>
+			<result name="getScore">/student/scoreInfo.jsp</result>
+			<result name="editStudent">/behind/editStudent.jsp</result>
+			<result name="updateStudent">/success.jsp</result>
+			<result name="deleteStudent">/success.jsp</result>
+			<result name="getPwd">/student/updatePwd.jsp</result>
+			<result name="getStudentPwd">/behind/updateStudentPwd.jsp</result>
+			<result name="updatePwd">/logout.jsp</result>
+			<result name="updateStudentPwd">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="teacherAction" class="com.ssh.action.TeacherAction">
+			<result name="update">/success.jsp</result>
+			<result name="addTeacher">/success.jsp</result>
+			<result name="deleteTeacher">/success.jsp</result>
+			<result name="listTeacher">/behind/teacherList.jsp</result>
+			<result name="updateTeacher">/success.jsp</result>
+			<result name="getTeacherById">/teacher/updateTeacher.jsp</result>
+			<result name="fail">/behind/addTeacher.jsp</result>
+			<result name="editTeacher">/teacher/updateTeacher.jsp</result>
+			<result name="loadScores">/teacher/scoresInfo.jsp</result>
+			<result name="editScore">/teacher/editScore.jsp</result>
+			<result name="updateScore">/teacher/success.jsp</result>
+			<result name="addScore">/teacher/success.jsp</result>
+			<result name="getPwd">/teacher/updatePwd.jsp</result>
+			<result name="getTeacherPwd">/behind/updateTeacherPwd.jsp</result>
+			<result name="updatePwd">/logout.jsp</result>
+			<result name="updateTeacherPwd">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="adminAction" class="com.ssh.action.AdminAction">
+			<result name="success">/behind/adminInfo.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="loginAction" class="com.ssh.action.LoginAction">
+			<result name="student">/student/studentIndex.jsp</result>
+			<result name="teacher">/teacher/teacherIndex.jsp</result>
+			<result name="admin">/behind/adminIndex.jsp</result>
+			<result name="input">/login.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+</struts>    

@@ -1,0 +1,8 @@
+/com/
+/org/
+/.struts.mex
+/META-INF/
+/applicationContext.xml
+/log4j.properties
+/struts.xml
+/studentdb.sql
